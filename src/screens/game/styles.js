@@ -5,5 +5,25 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: colors.white,
+        alignItems: "center",
     },
+    content: {
+        width: "75%",
+        height: 200,
+        alignItems: "center",
+        justifyContent: "space-around",
+        marginHorizontal: 20,
+        paddingVertical: 20,
+        marginVertical: 20,
+    },
+    title: {
+        fontSize: 16,
+        marginBottom: 10,
+    },
+    buttonContainer: {
+        flexDirection: "row",
+        width: "100%",
+        justifyContent: "space-around",
+        marginTop: 10,
+    }
 });

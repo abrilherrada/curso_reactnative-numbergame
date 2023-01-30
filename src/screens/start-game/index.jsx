@@ -14,7 +14,7 @@ import { Card } from "../../components";
 import { colors } from "../../constants";
 import { NumberContainer } from "../../components";
 
-export const StartGame = (onHandleStartGame) => {
+export const StartGame = ({ onHandleStartGame }) => {
   const [enteredValue, setEnteredValue] = useState("");
   const [confirmed, setConfirmed] = useState(false);
   const [selectedNumber, setSelectedNumber] = useState(null);
