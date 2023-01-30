@@ -10,6 +10,7 @@ export const styles = StyleSheet.create({
   },
   title: {
     fontSize: 18,
+    fontFamily: "Quicksand-SemiBold",
     color: colors.text,
     textAlign: "center",
     paddingVertical: 20,
@@ -23,6 +24,7 @@ export const styles = StyleSheet.create({
   },
   label: {
     fontSize: 15,
+    fontFamily: "Quicksand-Medium",
     color: colors.text,
     paddingVertical: 5,
     textAlign: "center",
@@ -53,5 +55,6 @@ export const styles = StyleSheet.create({
   },
   confirmedTitle: {
     fontSize: 16,
+    fontFamily: "Quicksand-Medium",
   }
 });

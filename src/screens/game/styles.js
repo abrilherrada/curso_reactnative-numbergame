@@ -18,6 +18,7 @@ export const styles = StyleSheet.create({
     },
     title: {
         fontSize: 16,
+        fontFamily: "Quicksand-SemiBold",
         marginBottom: 10,
     },
     buttonContainer: {
