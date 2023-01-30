@@ -6,6 +6,7 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center",
+    backgroundColor: colors.background,
   },
   title: {
     fontSize: 18,
@@ -18,6 +19,7 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     marginHorizontal: 20,
     paddingVertical: 20,
+    width: "75%",
   },
   label: {
     fontSize: 15,
@@ -26,7 +28,7 @@ export const styles = StyleSheet.create({
     textAlign: "center",
   },
   input: {
-    width: "100%",
+    width: "30%",
     borderBottomColor: colors.primary,
     borderBottomWidth: 1,
     minWidth: 70,
@@ -40,4 +42,16 @@ export const styles = StyleSheet.create({
     justifyContent: "space-around",
     marginTop: 20,
   },
+  confirmedContainer: {
+    width: "75%",
+    height: 200,
+    justifyContent: "space-around",
+    alignItems: "center",
+    marginHorizontal: 20,
+    paddingVertical: 20,
+    marginVertical: 20,
+  },
+  confirmedTitle: {
+    fontSize: 16,
+  }
 });

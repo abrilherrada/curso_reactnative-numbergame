@@ -1,9 +1,9 @@
 export const colors = {
   primary: "#5E548E",
-  secondary: "#7B72AC",
+  secondary: "#C3BFD9",
   primaryButton: "#B6C8A9",
   secondaryButton: "#F4A4A6",
-  background: "#EBF2FA",
+  background: "#F5F5F5",
   text: "#212121",
   white: "#fff",
   black: "#000",
