@@ -14,7 +14,7 @@ import { Card } from "../../components";
 import { colors } from "../../constants";
 import { NumberContainer } from "../../components";
 
-export const StartGame = () => {
+export const StartGame = (onHandleStartGame) => {
   const [enteredValue, setEnteredValue] = useState("");
   const [confirmed, setConfirmed] = useState(false);
   const [selectedNumber, setSelectedNumber] = useState(null);
@@ -41,14 +41,16 @@ export const StartGame = () => {
     }
   };
 
-  const onHandleStartGame = () => null;
+  const onHandleStart = () => {
+    onHandleStartGame(selectedNumber);
+  };
 
   const Confirmed = () =>
     confirmed ? (
       <Card style={styles.confirmedContainer}>
         <Text style={styles.confirmedTitle}>Número seleccionado</Text>
         <NumberContainer number={selectedNumber} />
-        <Button title="Iniciar juego" onPress={onHandleStartGame} color={colors.primaryButton} />
+        <Button title="Iniciar juego" onPress={onHandleStart} color={colors.primaryButton} />
       </Card>
     ) : null;
 
