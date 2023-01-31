@@ -12,7 +12,6 @@ export const styles = StyleSheet.create({
         height: 200,
         alignItems: "center",
         justifyContent: "space-around",
-        marginHorizontal: 20,
         paddingVertical: 20,
         marginVertical: 20,
     },
