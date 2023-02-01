@@ -26,25 +26,29 @@ const App = () => {
     setGuessingRounds(rounds);
   };
 
+  const onHandleRestart = () => {
+    setUserNumber(null);
+    setGuessingRounds(0);
+  };
+
   const Content = () => {
     if (userNumber && guessingRounds <= 0) {
       return <Game userNumber={userNumber} onHandleGameOver={onHandleGameOver} />;
     }
 
     if (guessingRounds > 0) {
-      return <GameOver />;
+      return (
+        <GameOver
+          onHandleRestart={onHandleRestart}
+          rounds={guessingRounds}
+          selectedNumber={userNumber}
+        />
+      );
     }
 
     return <StartGame onHandleStartGame={onHandleStartGame} />;
   };
 
-  /*   const Content = () =>
-    userNumber ? (
-      <Game userNumber={userNumber} onHandleGameOver={onHandleGameOver} />
-    ) : (
-      <StartGame onHandleStartGame={onHandleStartGame} />
-    );
- */
   if (!loaded) {
     return (
       <View style={styles.containerLoader}>
