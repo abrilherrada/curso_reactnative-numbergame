@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ActivityIndicator, View } from "react-native";
+import { ActivityIndicator, View, SafeAreaView } from "react-native";
 import { useFonts } from "expo-font";
 
 import { Header } from "./components";
@@ -58,10 +58,12 @@ const App = () => {
   }
 
   return (
-    <View style={styles.container}>
-      <Header title="Adivina el número" />
-      <Content />
-    </View>
+    <SafeAreaView style={styles.containerSafeArea}>
+      <View style={styles.container}>
+        <Header title="Adivina el número" />
+        <Content />
+      </View>
+    </SafeAreaView>
   );
 };
 

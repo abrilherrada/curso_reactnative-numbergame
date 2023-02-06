@@ -7,6 +7,15 @@ export const styles = StyleSheet.create({
         backgroundColor: colors.white,
         alignItems: "center",
     },
+    contentLandscape: {
+        width: "80%",
+        alignItems: "center",
+        justifyContent: "space-around",
+        paddingVertical: 20,
+        paddingHorizontal: 20,
+        marginVertical: 20,
+
+    },
     content: {
         width: "75%",
         alignItems: "center",
